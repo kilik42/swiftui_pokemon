@@ -34,6 +34,8 @@ struct PokemonCell: View {
                         .resizable()
                         .scaledToFit()
                         .frame(width: 68, height: 68)
+                        .padding([.bottom, .trailing],4)
+                        .shadow(color: .green, radius: 6, x:0.0, y:0.0)
                         
                 }
             }
