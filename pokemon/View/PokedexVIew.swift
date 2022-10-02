@@ -13,13 +13,14 @@ struct PokedexVIew: View {
 //        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
         NavigationView{
             ScrollView {
-                LazyVGrid (columns: gridItems, content: {
+                LazyVGrid (columns: gridItems, spacing: 16){
                     ForEach(0..<151){ _ in
-                        PokemonCell()
+                        PokemonCell(pokemon: MOCK_POKEMON[2])
                         
                     }
-                })
+                }
             }
+            .navigationTitle("Pokedex")
         }
     }
 }
